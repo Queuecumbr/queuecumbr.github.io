@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>DuckDuckGo - POST</ShortName>
+  <Description>DuckDuckGo with POST</Description>
+  <Url type="text/html" method="post" template="https://duckduckgo.com/">
+    <Param name="q" value="{searchTerms}"/>
+  </Url>
+  <Url type="application/x-suggestions+json" template="https://ac.duckduckgo.com/ac/?q={searchTerms}&amp;type=list"/>
+  <Image width="32" height="32">https://duckduckgo.com/favicon.ico</Image>
+  <Developer>Queuecumbr</Developer>
+  <InputEncoding>UTF-8</InputEncoding>
+  <moz:SearchForm>https://duckduckgo.com/</moz:SearchForm>
+  <Url type="application/opensearchdescription+xml" rel="self" template="ddg_post.xml"/>
+</OpenSearchDescription>
